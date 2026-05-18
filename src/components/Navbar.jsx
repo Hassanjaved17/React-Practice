@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
-import {ThemeContext} from '../context/ThemeContext'
+import ThemeContext from '../context/ThemeContext'
 function Navbar() {
     const { theme, setTheme } = useContext(ThemeContext)
-
     return (
         <nav className="sticky top-0 z-50 border-b border-white/10 bg-gray-900 backdrop-blur-xl text-white shadow-lg">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
@@ -59,7 +58,11 @@ function Navbar() {
                 >
                     Logout
                 </button>
-                <button className='theme-toggle' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+                <button
+                    onClick={() =>
+                        setTheme(theme === 'light' ? 'dark' : 'light')
+                    }
+                >
                     {theme === 'light' ? '🌙' : '☀️'}
                 </button>
             </div>

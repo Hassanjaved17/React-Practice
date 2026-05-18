@@ -1,22 +1,17 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
 
+// Create Context
+const ThemeContext = createContext()
 
-const ThemeContext = () => {
-    const [theme, setTheme] = React.useState('light')
+// Provider Component
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState('light')
 
   return (
-    <>
-    <div>ThemeContext</div>
-
-    if(theme === 'light'){
-        document.documentElement.classList.remove('dark')
-    } 
-    
-    else {
-        document.documentElement.classList.add('dark')  
-    }
-    </>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
   )
 }
 
-export default ThemeContext;
+export default ThemeContext
