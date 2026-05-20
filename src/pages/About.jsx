@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/buttons/Button'
 
 const About = () => {
   return (
@@ -15,6 +16,8 @@ const About = () => {
       <p className="text-lg mb-4">
         Thank you for choosing HandyCraft. We hope you find something special that brings joy and inspiration to your life.
       </p>
+
+      <Button title="Learn More"/>
     </div>
     </>
   )

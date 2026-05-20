@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import Button from "../components/buttons/Button"
+
 function Home() {
   return (
     <>
@@ -10,9 +12,7 @@ function Home() {
           <p className="text-lg mb-6">
             Discover a world of creativity and craftsmanship with us. Explore our unique collection of handmade products, crafted with love and care by talented artisans from around the globe.
           </p>
-          <button className="bg-orange-400 text-white px-6 py-3 rounded-lg hover:bg-orange-500 transition duration-300">
-            Shop Now
-          </button>
+          <Button title="Shop Now"/>
         </div>
       </div>
 

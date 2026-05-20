@@ -1,4 +1,5 @@
 // import React from 'react'
+import Button from '../components/buttons/Button'
 
 const Contact = () => {
   return (
@@ -22,6 +23,8 @@ const Contact = () => {
         <p className="text-lg mb-4">
             Thank you for choosing HandyCraft. We look forward to assisting you!
         </p>
+
+        <Button title="Contact Us"/>
       </div> 
     
     </>
