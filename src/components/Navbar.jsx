@@ -63,7 +63,7 @@ function Navbar() {
                         setTheme(theme === 'light' ? 'dark' : 'light')
                     }
                 >
-                    {theme === 'light' ? '🌙' : '☀️'}
+                    {theme === 'light' ? '☀️' : '🌙'}
                 </button>
             </div>
         </nav>

@@ -22,7 +22,7 @@ const Contact = () => {
         <p className="text-lg mb-4">
             Thank you for choosing HandyCraft. We look forward to assisting you!
         </p>
-      </div>
+      </div> 
     
     </>
   )
