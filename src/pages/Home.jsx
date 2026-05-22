@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import Button from "../components/buttons/Button"
+import Counter from "../components/counter/Counter"
 
 function Home() {
   return (
@@ -15,6 +16,10 @@ function Home() {
           <Button title="Shop Now"/>
         </div>
       </div>
+
+<div className=" mt-5 mb-5"><Counter/></div>
+
+
 
       <div className="features py-12 bg-gray-100">
         <div className="container">
