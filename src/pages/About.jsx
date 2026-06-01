@@ -1,7 +1,12 @@
 // import React from 'react'
+import { useContext } from 'react';
 import Button from '../components/buttons/Button'
+import  UserContext  from '../context/UserContext'
 
 const About = () => {
+
+  const {user, setUser} = useContext(UserContext)
+  console.log("users", user);
   return (
     <>
     
@@ -19,8 +24,15 @@ const About = () => {
 
       <Button title="Learn More"/>
     </div>
+   <div>
+      <h1 className='text-2xl font-bold mb-4'>Hi i am {user.title}</h1>
+      <h2 className='text-xl font-semibold mb-2'>The product Desc are: {user.body}</h2>
+
+   </div>
+
+
     </>
   )
 }
 
-export default About
+ export default About
