@@ -10,10 +10,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
       <UserProvider>
-        <UsersProvider> </UsersProvider> 
-        <UserProvider>
+        <UsersProvider> 
           <App />
-        </UserProvider>
+        </UsersProvider> 
       </UserProvider>
     </ThemeProvider>
   </StrictMode>,
